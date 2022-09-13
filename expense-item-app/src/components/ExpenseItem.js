@@ -12,6 +12,7 @@ function ExpenseItem(props){
         console.log(title);
     }
     return( 
+    <li>
     <div className='expense-item'>
         <ExpenseDate date ={props.date}></ExpenseDate> 
         <div className='expense-item__description'>
@@ -20,6 +21,7 @@ function ExpenseItem(props){
         </div>
         <button onClick={clickHandler}>Change Title</button>
     </div>
+    </li>
     );
 }
 export default ExpenseItem;

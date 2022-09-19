@@ -6,13 +6,13 @@ import NewDetails from './components/NewDetails/NewDetails';
 const INITIAL_DETAILS = [{
   id:'1',
   ename: 'Ram',
-  date: new Date(2007, 6, 12),
+  date: new Date(2019, 6, 12),
   
 },
 {
   id:'2',
   ename: 'Sam',
-  date: new Date(2010, 2, 10),
+  date: new Date(2022, 2, 10),
   
 },
 

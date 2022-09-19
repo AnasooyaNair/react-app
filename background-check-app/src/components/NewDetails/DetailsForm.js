@@ -37,6 +37,7 @@ function DetailsForm(props){
             </div>
         </div>
         <div className='new-details__actions'>
+            <button type= "button" onClick={props.onCancel}>Cancel</button>
             <button type="submit">Add Details</button>
         </div>
         </form>

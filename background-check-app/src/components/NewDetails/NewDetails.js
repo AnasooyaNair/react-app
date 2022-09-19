@@ -1,7 +1,8 @@
-import React  from 'react';
+import React, { useState }  from 'react';
 import DetailsForm from './DetailsForm';
 import './NewDetails.css';
 function NewDetails(props){
+    const [isEditing , setIsEditing] = useState(false);
     const saveDetailsHandler = enteredDetails =>{
         const empDetails ={
             ...enteredDetails,
@@ -9,10 +10,19 @@ function NewDetails(props){
         }; 
         
         props.onAddDetails(empDetails);
+        setIsEditing(false);
+    }
+
+    const startEditingHandler = () => {
+        setIsEditing(true);
+    }
+    const stopEditingHandler = () => {
+        setIsEditing(false);
     }
 return(
     <div className='new-details'>
-        <DetailsForm onSaveDetails={saveDetailsHandler} ></DetailsForm>
+       { !isEditing && <button onClick={startEditingHandler}>Add New Details</button>}
+        { isEditing && <DetailsForm onSaveDetails={saveDetailsHandler} onCancel = {stopEditingHandler}></DetailsForm>}
         
     </div>
 )

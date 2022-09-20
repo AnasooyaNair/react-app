@@ -3,7 +3,7 @@ import DetailsList from './DetailsList';
 import './Details.css';
 import DetailsFilter from './DetailsFilter';
 function Details(props){
-    const [filteredYear,setFilteredYear] = useState("2020");
+    const [filteredYear,setFilteredYear] = useState("Select");
     const filterChangeHandler = (selectedYear)=>
     {
         setFilteredYear(selectedYear);

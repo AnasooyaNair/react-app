@@ -14,6 +14,7 @@ const INITIAL_DETAILS = [{
   ename: 'Sam',
   date: new Date(2022, 2, 10),
   
+  
 },
 
 ];

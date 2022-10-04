@@ -28,11 +28,11 @@ function DetailsForm(props){
         <form onSubmit={submitHandler}>
             <div className='new-details__controls'>
             <div className='new-details__control'>
-            <label>Ename</label>
+            <label>Employee Name</label>
             <input type="text" onChange={nameAddHandler} value={enteredName}></input>
             </div>
             <div className='new-details__control'>
-            <label>Date</label>
+            <label>Date of Joining</label>
             <input type="date" min="2019-01-01" max="2022-12-31" onChange={dateChangeHandler} value={enteredDate}></input>
             </div>
         </div>

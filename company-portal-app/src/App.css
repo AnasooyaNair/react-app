@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  overflow: hidden;
+  
+  grid-template-areas:
+    'header header header header header header'
+    'section aside aside aside aside aside'
+    'footer footer footer footer footer footer';
+}
+
+.header{
+  grid-area: header;
+}
+
+.section{
+grid-area: section;
+}
+
+.aside{
+  margin-bottom:25%;
+  grid-area: aside;
+}
+
+.footer{
+grid-area: footer;
+}

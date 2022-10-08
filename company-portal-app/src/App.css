@@ -1,14 +1,14 @@
 .App {
   text-align: center;
 }
+
 .grid-container {
   display: grid;
   overflow: hidden;
-  
   grid-template-areas:
-    'header header header header header header'
-    'section aside aside aside aside aside'
-    'footer footer footer footer footer footer';
+  'header header header header header header'
+  'section aside aside aside aside aside'
+  'footer footer footer footer footer footer';
 }
 
 .header{
@@ -26,4 +26,10 @@ grid-area: section;
 
 .footer{
 grid-area: footer;
+}
+
+.contentdetails{
+  width: 1000px;
+  height: 300px;
+  margin : 20px 0px 70px 70px;
 }
